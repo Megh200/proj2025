@@ -1,0 +1,81 @@
+#i1{
+    background:grey;
+}
+.cl2{
+    background-color: yellow ;
+}
+p{
+    background-color: skyblue;
+    margin: 0px;
+}
+li{
+    color: chartreuse;
+}
+.cl1{
+    background-color: red;
+}
+
+
+h1{
+    margin: 15px;
+    outline: 5px dashed red;
+    border: groove green;
+    border-width: 2px 4px 10px 3px;
+    padding:10px; 
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#box{
+    width:200px;
+    height:150px;
+    background-color: brown;
+    border-radius: 10px 50px;
+    background-image: url('/image/html1.jpg');
+}
+#b2{
+    width:200px;
+    height:150px;
+    background-color: brown;
+    border-radius: 10px 50px;
+    transition: all 10s;
+    box-shadow: 5px 5px;
+    background-image: url('/image/html1.jpg');
+    background-size:contain;
+
+
+    /* transition-delay: 1s; */  /*transition will be on the box itself,take 1s delay when we hover & also after we leave hovering */
+
+    /* transform: rotate(60deg); */   /* on the box itself, the box is rotated already */
+
+
+}
+#b2:hover{
+    width: 100px;
+    height: 50px;
+
+    /* transition: all 10s; */
+   /* transform: rotate(180deg); /*box'll rotate when hover*/
+    /*transition-delay: 1s;  /*transition will take 1s delay only when we hover */
+
+    transform:scale(1);
+}
+
+button{
+    margin: 5px;
+    font-size: 18px;
+    color: black;
+    background-color: blueviolet;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6.5px;
+}
+
+button:hover{
+    background-color: #BF40BF;
+    box-shadow: 5px 5px;    /* shadow will appear like the font color */
+}
