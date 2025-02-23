@@ -4,10 +4,6 @@
 .cl2{
     background-color: yellow ;
 }
-p{
-    background-color: skyblue;
-    margin: 0px;
-}
 li{
     color: chartreuse;
 }
@@ -78,4 +74,31 @@ button{
 button:hover{
     background-color: #BF40BF;
     box-shadow: 5px 5px;    /* shadow will appear like the font color */
+}
+.f{
+    width:50%;
+    height:200px;
+    background-color: black;
+    position: relative;
+    /* margin: 0 auto; */
+
+}
+.s{
+    width:30px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    /* top: 95px;
+    right:50%; */
+}
+.container{
+    height: 50px;
+    width:200px;
+    background-color: grey;
+    display: flex;
+    /* flex-wrap: wrap;           
+    align-content: flex-end; */        /* doesn't work w8 flexwrap */
+    /* align-items: flex-start; */
+    justify-content:right; 
+    flex-direction:row-reverse;
 }
