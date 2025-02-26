@@ -80,7 +80,6 @@ button:hover{
     height:200px;
     background-color: black;
     position: relative;
-    /* margin: 0 auto; */
 
 }
 .s{
@@ -92,6 +91,8 @@ button:hover{
     right:50%; */
 }
 .container{
+    margin: 0 auto;
+    /* centers this container w.r.t. the current web page */
     height: 50px;
     width:200px;
     background-color: grey;
