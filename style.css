@@ -30,7 +30,7 @@ body{
     width:200px;
     height:150px;
     background-color: brown;
-    border-radius: 10px 50px;
+    border-radius: 150px;
     background-image: url('/image/html1.jpg');
 }
 #b2{
@@ -39,7 +39,7 @@ body{
     background-color: brown;
     border-radius: 10px 50px;
     transition: all 10s;
-    box-shadow: 5px 5px;
+    box-shadow: 10px 5px yellow;
     background-image: url('/image/html1.jpg');
     background-size:contain;
 
@@ -51,14 +51,14 @@ body{
 
 }
 #b2:hover{
-    width: 100px;
-    height: 50px;
+    /* width: 100px;
+    height: 50px; */
 
     /* transition: all 10s; */
    /* transform: rotate(180deg); /*box'll rotate when hover*/
     /*transition-delay: 1s;  /*transition will take 1s delay only when we hover */
 
-    transform:scale(1);
+    transform:scalex(2);    /* means 2 times to its original size by x axis like width*/
 }
 
 button{
@@ -80,6 +80,7 @@ button:hover{
     height:200px;
     background-color: black;
     position: relative;
+    left:50px;
 
 }
 .s{
@@ -87,8 +88,8 @@ button:hover{
     height: 20px;
     background-color: red;
     position: absolute;
-    /* top: 95px;
-    right:50%; */
+    top: 95px;
+    right:50%;
 }
 .container{
     margin: 0 auto;
@@ -98,8 +99,95 @@ button:hover{
     background-color: grey;
     display: flex;
     /* flex-wrap: wrap;           
-    align-content: flex-end; */        /* doesn't work w8 flexwrap */
-    /* align-items: flex-start; */
-    justify-content:right; 
+    align-content: flex-start;        /* doesn't work w8 flexwrap */
+   
+    align-items: center;
+    justify-content:space-between; 
     flex-direction:row-reverse;
+    flex-direction:column;
+/* two same properties but will follow last written */
 }
+
+#loader{
+    width:180px;
+    height:170px;
+    border-radius:100%;
+    border:10px solid #e9e3e3;
+    border-top:10px solid rgb(82, 221, 186);
+    
+    /* animation-name:loader;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:normal; */
+     animation: loader 2s ease-in 3s infinite normal;
+
+}
+@keyframes loader{                     /* @keyframes _____(any name){from{} to{} }   for animation  */
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+nav{
+    background-color:blue;
+    height:100px;
+    display:flex;
+    justify-content: center;
+}
+
+.navbar{
+    margin:0;
+    background-color: #ffc803;
+    height:100px;
+    display:flex;
+    
+}
+.nav-logo{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ746_aBKBIKYjum1q5cb4td50VniHkVsXJw&s');
+    width:80px;
+    height:70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:8px;
+    
+}
+img:hover,.nav-logo:hover{
+    border: 2px solid white;
+    border-radius:100%;
+
+}
+table{
+    /* in index.html page */
+    border-collapse: collapse;
+}
+#animate{
+    border-radius: 0px 100px 100px 0px;
+    animation:animate 2s ease-in 1s infinite alternate;
+}
+@keyframes animate {
+    from{
+        transform:translatex(0px);}
+    to{
+        transform:translatex(90vw);
+    }
+}
+
+#sun{
+    width:50px;
+    height:50px;
+    border-radius:50px ;
+    position:absolute;
+    animation:sunrise 4s ease-in 0s 2 normal;
+}
+@keyframes sunrise {
+    from{
+        transform:translatey(0px);}
+    to{
+        transform:translatey(40vh);
+    }
+}
+

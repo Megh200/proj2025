@@ -11,11 +11,16 @@
 <body>
     
     <!-- navbar -->
+     <!-- collapse means to hide/show -->
 
     <nav class="navbar navbar-expand-lg bg-success">
         <a class="navbar-brand" data-bs-target="#navigation-bar" data-bs-toggle="collapse" href="#"><i class="ps-3 bi bi-person-circle fs-1 text-dark"></i></a>
         
-        <div class="collapse navbar-collapse" id="navigation-bar">
+        <!-- when we write collapse only, all the contents hide both on big size and small size but it'll hide like simple & we want it to hide acc.t navbar
+         like all in center as all websites do and when we write navbar-collapse only it does this thing for small screensizes
+         bcz it inherits this small size prop BUT when we set screen small,it will show navbar contents open like it will not
+         hide that so we want navbar to be hidden exactly when we set small screensize that's why we use collapse -->
+        <div class="collapse navbar-collapse " id="navigation-bar">
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link text-light text-decoration-none px-2 fw-bold btn btn-dark" href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link text-light text-decoration-none px-2 fw-bold btn btn-dark" href="#">Skills</a></li>
@@ -32,7 +37,7 @@
             <li class="nav-item"><a class="nav-link text-light text-decoration-none px-2 fw-bold btn btn-dark" href="#">Contact me</a></li>
         </ul>
         <form class="m-3">
-            <div class="input-group input-group-sm ">
+            <div class="input-group input-group-sm">
         <input type="input-group-text" placeholder="search" class="form-control">
         <button class="btn btn-dark "><i class="bi bi-search" ></i></button>
         </div>
@@ -77,7 +82,7 @@
                     <h3>Front End Development</h3>
                     <div class="row">
                         <div class="col">
-                            <div class="progress bg-secondary w-50 m-auto my-2">
+                            <div class="progress bg-secondary w-50 m-auto my-2">  <!-- here 'w' will always in forms as 25,50,100 and like we can say we want 25%/50% etc relative to its parent element -->
                                 <div class="progress-bar bg-success" style="width:100%;">HTML</div>
                             </div>
 
@@ -163,6 +168,7 @@
                 <img class="card-img-top p-3" src="https://static.langimg.com/photo/imgsize-32462,msid-90394686/navbharat-times.jpg" alt="10th board">
                 <div class="card-body" >
                     <div class="card-title text-success text-center"><h3>Secondary</h3></div>
+                    <!-- <h3 class="card-title text-success text-center">Secondary</h3> -->
                     <div class="card-text text-muted text-center">I have completed secondary education from VVA school with 93%</div>
                 </div>
             </div>

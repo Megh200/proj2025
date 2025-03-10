@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>Food Hub</h1>
+        <button id="orderBtn">Order</button>
+    </nav>
+
+    <!-- Food Items Section -->
+    <section class="food-container">
+        <div class="food">
+            <img src="https://media.istockphoto.com/id/2148672887/photo/beef-patty-burger-with-vegetables-and-lettuce-on-white-background-file-contains-clipping-path.jpg?s=612x612&w=is&k=20&c=jwNo8FrSfkIcFzn9_0F_eQyEzsaso3XCV39BBQ1tZUE=" alt="Burger">
+            <h2>Burger</h2>
+        </div>
+        <div class="food">
+            <img src="https://media.istockphoto.com/id/187248625/photo/pepperoni-pizza.jpg?s=612x612&w=is&k=20&c=Mx1YTfJ1W3SZDpJxYbPeFp9rWVl1QlM1_krBgHQpNA0=" alt="Pizza">
+            <h2>Pizza</h2>
+        </div>
+        <div class="food">
+            <img src="https://plus.unsplash.com/premium_photo-1667806845059-51fa9165bda1?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFzdHJpZXN8ZW58MHx8MHx8fDA%3D" alt="Pastry">
+            <h2>Pastry</h2>
+        </div>
+        <div class="food">
+            <img src="https://media.istockphoto.com/id/1314329942/photo/goal-gappa-or-pani-puri.jpg?s=612x612&w=is&k=20&c=jn5EFrtwoVbTSzNB4YxVQz9ntVQGZ84i3kwxenvCzNY=" alt="Panipuri">
+            <h2>Panipuri</h2>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <div id="orderForm" class="hidden">
+        <h2>Place Your Order</h2>
+        <label>Burger (₹80 per plate): <input type="number" id="burgerQty" min="0" value="0"></label>
+        <label>Pizza (₹150 per plate): <input type="number" id="pizzaQty" min="0" value="0"></label>
+        <label>Pastry (₹50 per plate): <input type="number" id="pastryQty" min="0" value="0"></label>
+        <label>Panipuri (₹30 per plate): <input type="number" id="panipuriQty" min="0" value="0"></label>
+        <button id="submitOrder">Submit Order</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
