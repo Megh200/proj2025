@@ -11,6 +11,8 @@ const image1 =  "/dom/dice/d" + randomnum + ".jpg";
 
 document.querySelector('img').setAttribute("src",image1);
 
+
+// win draw luck game
 const play1= Math.trunc(Math.random()*6+1);
 const play2= Math.trunc(Math.random()*6+1);
 console.log(play1,play2);
