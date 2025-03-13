@@ -1,26 +1,38 @@
 "use strict";
 
-const randomnum=Math.trunc(Math.random()*6+1);
-console.log(randomnum);
+const signbtn = document.querySelector('#sign');
+const signbox = document.querySelector('.sign-box');
+const closebtn = document.querySelector('.closebtn');
 
-// create a image var
-const image1 =  "/dom/dice/d" + randomnum + ".jpg";
-//  this above expression is written with reference to images like d1.jpg or d2.jpg etc
-// so for 'd', there will be the path of image; for nums like 1/2or 3 etc we added randomnum
-// that's why we created randomnumber; and then last '.jpg'
+const showsignbox = function(){
+    signbox.classList.remove('hide');
+    document.querySelector('bluring').clablussList.remove('hide');
+}
 
-document.querySelector('img').setAttribute("src",image1);
+const closesignbox = function(){
+    signbox.classList.add('hide');
+}
+
+signbtn.addEventListener('click', showsignbox);
+closebtn.addEventListener('click', closesignbox);
+
+//now via keyboard
+
+//we can do this method 
+// const keyfun = function(btn){
+//     if(btn.key == 'c') closesignbox();
+// }
+// document.addEventListener('keyup',keyfun);
 
 
-// win draw luck game
-const play1= Math.trunc(Math.random()*6+1);
-const play2= Math.trunc(Math.random()*6+1);
-console.log(play1,play2);
+// or this
 
-if(play1>play2)
-    document.querySelector('#result').innerHTML='player1 wins';
-else if(play1<play2)
-document.querySelector('#result').innerHTML='player2 wins';
+document.addEventListener('keyup',function (c){
+    if(c.key=='c') closesignbox(); }
+);
 
-else
-document.querySelector('#result').innerHTML='DRAW';
+
+
+
+
+
