@@ -6,11 +6,12 @@ const closebtn = document.querySelector('.closebtn');
 
 const showsignbox = function(){
     signbox.classList.remove('hide');
-    document.querySelector('bluring').clablussList.remove('hide');
+    document.querySelector('.bluring').classList.remove('hide');
 }
 
 const closesignbox = function(){
     signbox.classList.add('hide');
+    document.querySelector('.bluring').classList.add('hide');
 }
 
 signbtn.addEventListener('click', showsignbox);
