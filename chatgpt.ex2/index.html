@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Order</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger p-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Food Hub</a>
+            <button class="btn btn-light" id="orderBtn">Order</button>
+        </div>
+    </nav>
+
+    <!-- Food Items Section -->
+    <div class="container text-center my-4">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card shadow">
+                    <img src="https://media.istockphoto.com/id/2148672887/photo/beef-patty-burger-with-vegetables-and-lettuce-on-white-background-file-contains-clipping-path.jpg?s=612x612&w=is&k=20&c=jwNo8FrSfkIcFzn9_0F_eQyEzsaso3XCV39BBQ1tZUE=" class="card-img-top" alt="Burger">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow">
+                    <img src="https://media.istockphoto.com/id/187248625/photo/pepperoni-pizza.jpg?s=612x612&w=is&k=20&c=Mx1YTfJ1W3SZDpJxYbPeFp9rWVl1QlM1_krBgHQpNA0=" class="card-img-top" alt="Pizza">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow">
+                    <img src="https://plus.unsplash.com/premium_photo-1667806845059-51fa9165bda1?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFzdHJpZXN8ZW58MHx8MHx8fDA%3D" class="card-img-top" alt="Pastry">
+                    <div class="card-body">
+                        <h5 class="card-title">Pastry</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow">
+                    <img src="https://media.istockphoto.com/id/1314329942/photo/goal-gappa-or-pani-puri.jpg?s=612x612&w=is&k=20&c=jn5EFrtwoVbTSzNB4YxVQz9ntVQGZ84i3kwxenvCzNY=" class="card-img-top" alt="Panipuri">
+                    <div class="card-body">
+                        <h5 class="card-title">Panipuri</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Form -->
+    <div id="orderForm" class="container bg-light p-4 rounded shadow d-none">
+        <h2 class="text-center">Place Your Order</h2>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label class="form-label">Burger (₹80 per plate)</label>
+                <input type="number" id="burgerQty" class="form-control" min="0" value="0">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Pizza (₹150 per plate)</label>
+                <input type="number" id="pizzaQty" class="form-control" min="0" value="0">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Pastry (₹50 per plate)</label>
+                <input type="number" id="pastryQty" class="form-control" min="0" value="0">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Panipuri (₹30 per plate)</label>
+                <input type="number" id="panipuriQty" class="form-control" min="0" value="0">
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <button id="submitOrder" class="btn btn-danger">Submit Order</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
