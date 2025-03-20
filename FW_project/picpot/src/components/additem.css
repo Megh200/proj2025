@@ -1,0 +1,10 @@
+form{
+    display: flex;
+    justify-content: center;
+}
+form input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    
+}

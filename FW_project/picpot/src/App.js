@@ -1,7 +1,9 @@
 import React from "react";
 
+import AddItem from "./components/additem.js";
 import Todolist from "./components/todolist.js";
 import "./App.css";
+
 
 const App = () => {
 
@@ -16,6 +18,11 @@ const App = () => {
                         {id:3, work:"working IT", td:'today', tm:'tommorow'},
     ]
 
+    const additemhandle =(newitem) =>{
+        array.push(newitem);
+        console.log(array);
+    }
+
     return(
         // only one element in return state. so <p></p> & <li></li> in one <div></div>
         <div className="container" >
@@ -26,6 +33,8 @@ const App = () => {
             <li>two</li>
             <li>three</li>
             </ul>
+
+            <AddItem onsub={additemhandle} />
 
             {/* user-made todolist tag & attribute that can be any */}
             <Todolist arr = {array} />       {/* to use javascript in these tags we have to use {} */}
