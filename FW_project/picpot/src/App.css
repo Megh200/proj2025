@@ -1,15 +1,27 @@
 body{
-    background: linear-gradient(to top,green,white,orange);
+    background: radial-gradient(white,rgb(243, 242, 248), rgb(181, 181, 236), rgba(137, 137, 238, 0.89));
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .container{
     margin: 0 auto;
-    width: 30%;
+    width: 60%;
+    height: 350px;
     border-radius: 10px;
     border: 1px solid transparent;
-    background-color: #F6F1DE;
+    box-shadow: -5px 7px 10px black;
+    /* background-color: transparent; */
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-size: 20px 40px;
+    background-image:  repeating-linear-gradient(0deg, #444cf7, #444cf7 1px, #e5e5f7 1px, #e5e5f7);
+
+    font-family: "Caveat", cursive;
+    font-style: normal;
+
 }
-.container p{
+.container p,li{
     text-align: center;
+    list-style-type: none;
 }
