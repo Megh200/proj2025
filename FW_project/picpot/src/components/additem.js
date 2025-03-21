@@ -23,6 +23,7 @@ const AddItem = (props) =>{
         <form onSubmit={handle}>   {/* when we submit, there is an event happening, so added eventlistener  */}
             <input type="text" onChange={entryhandle}></input>
             {/* <input type="submit" value="add" ></input> */}
+            
             <button type="submit" >add</button>
 
         </form>
