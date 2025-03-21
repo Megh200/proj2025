@@ -21,12 +21,20 @@ const Todolist = (props) => {
             <li> {props.arr[2].tm} </li>
         </ul>
 
-        {/* now using loop :- map() */}
+         {/* using forEach loop but prints in console */}
+         {props.arr.forEach(item => {
+             console.log(item.id, item.td)
+        })}
+
+
+
+        {/* now using loop :- map() that can print on webpage obviusly with "return" state. */}
         {props.arr.map( (item)=>{
             return <p key={item.id} > {item.id}.. {item.work} </p>
         } )}    {/* used key attri. to remove warning in console */}
 
 
+       
 
 
         </div>
