@@ -8,7 +8,7 @@ const AddItem = (props) =>{
         // on submitting, webpage's refreshing again nd again, to stop this we use..
         event.preventDefault();
         // new item to add in the array
-        const newitem = {id:4,work:entrywork ,td:"today"};
+        const newitem = {id:Math.trunc(Math.random()*10+1), work:entrywork, td:"today"};
         props.onsub(newitem);
     };
 
