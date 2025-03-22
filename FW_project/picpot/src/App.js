@@ -21,19 +21,22 @@ const App = () => {
 
 
     // taking this const array in hook function:- useState() by [variable,function]
-    const [array, funofhook] = useState(
-                             [  {id:1, work:"no work", td:'today', tm:'tommorow'},
-                                {id:2, work:"reading", td:'today', tm:'tommorow'},
-                                {id:3, work:"working IT", td:'today', tm:'tommorow'},   ]                
+    const [array, funcofhook] = useState(
+                             [  {id:Math.trunc(Math.random()*10 +1), work:"no work", td:'today', tm:'tommorow'},
+                                {id:Math.trunc(Math.random()*10 +1), work:"reading", td:'today', tm:'tommorow'},
+                                {id:Math.trunc(Math.random()*10 +1), work:"working IT", td:'today', tm:'tommorow'},   ]                
     )
 
 
     const additemhandle =(newitem) =>{
         
         // adding useState function in this bcz we have to show the array so here it will push in array
+        funcofhook( (initialarray) =>{
+           return initialarray.concat(newitem);
+        }  )
 
-        array.push(newitem);
-        console.log(array);
+        // array.push(newitem);
+        // console.log(array);
     }
 
     return(

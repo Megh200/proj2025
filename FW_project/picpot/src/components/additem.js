@@ -7,11 +7,9 @@ const AddItem = (props) =>{
     const handle = (event) =>{
         // on submitting, webpage's refreshing again nd again, to stop this we use..
         event.preventDefault();
-
         // new item to add in the array
         const newitem = {id:4,work:entrywork ,td:"today"};
         props.onsub(newitem);
-
     };
 
     const entryhandle = (event) =>{
