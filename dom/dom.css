@@ -24,7 +24,6 @@ p{
     width: 600px;
     height:250px;
     background: linear-gradient(to top, white, grey);
-    /* background-blend-mode:exclusion; */
     box-shadow: 10px 15px 10px;     /* box-shadow:h v blurpx color */
 
 }
