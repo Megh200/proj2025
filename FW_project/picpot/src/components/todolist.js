@@ -21,6 +21,8 @@ const Todolist = (props) => {
             <li> {props.arr[2].tm} </li>
         </ul>
 
+
+
          {/* using forEach loop but prints in console */}
          {props.arr.forEach(item => {
              console.log(item.id, item.td)
