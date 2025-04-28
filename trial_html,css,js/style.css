@@ -8,7 +8,7 @@ li{
     color: chartreuse;
 }
 .cl1{
-    background-color: red;
+    background-color: red ;
 }
 
 
@@ -27,10 +27,9 @@ body{
     padding: 0px;
 }
 #htmlimg{
-    background-color: brown;
     border-radius: 100px;
-    background-image: url('/00000000/image/html1.jpg');
 }
+
 #box{
     width:200px;
     height:150px;
