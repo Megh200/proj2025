@@ -109,8 +109,8 @@ button:hover{
     /* flex-wrap: wrap;           
     align-content: flex-start;        /* doesn't work w8 flexwrap */
    
-    align-items: center;
-    justify-content:space-between; 
+    align-items: center;              /* vertically adjust positions of flex items */
+    justify-content:space-between;     /* horizontally adjust positions of flex items */
     flex-direction:row-reverse;
     flex-direction:column;
 /* two same properties but will follow last written */
@@ -145,6 +145,7 @@ nav{
     height:100px;
     display:flex;
     justify-content: center;
+
 }
 
 .navbar{
