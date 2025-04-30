@@ -44,7 +44,7 @@ body{
     border-radius: 10px 50px;
     transition: all 10s;
     box-shadow: 10px 5px 10px yellow ;
-
+    translate: 15px 10px;      /* change the position in x and y axes */
 
     /* transition-delay: 1s; */  /*transition will be on the box itself,take 1s delay when we hover & also after we leave hovering */
 
@@ -59,7 +59,6 @@ body{
     /* transition: all 10s; */
    /* transform: rotate(180deg); /*box'll rotate when hover*/
     /*transition-delay: 1s;  /*transition will take 1s delay only when we hover */
-
     transform:scalex(2);    /* means 2 times to its original size by x axis like width*/
 }
 
@@ -75,8 +74,9 @@ button{
 
 button:hover{
     background-color: #BF40BF;
-    box-shadow: 5px 5px;    /* shadow will appear like the font color */
+    box-shadow: 5px 5px 10px grey;    /* shadow appears like the font color by default */
 }
+
 .f{
     width:50%;
     height:200px;
@@ -90,7 +90,7 @@ button:hover{
     height: 20px;
     background-color: red;
     position: absolute;
-    top: 95px;
+    top: 90px;
     right:50%;
 }
 .container{
