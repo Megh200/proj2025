@@ -118,28 +118,31 @@ button:hover{
 
 #loader{
     width:180px;
-    height:170px;
+    height:180px;
     border-radius:100%;
     border:10px solid #e9e3e3;
     border-top:10px solid rgb(82, 221, 186);
     
     /* animation-name:loader;
     animation-duration: 3s;
-    animation-timing-function: ease-in;
-    animation-delay: 0s;
+    animation-timing-function: ease-in;     
+     /* decides that chale kaise like rukruk k ya simple linearly or ease-in out */
+    
+     /* animation-delay: 0s;
     animation-iteration-count: infinite;
-    animation-direction:normal; */
-     animation: loader 2s ease-in 3s infinite normal;
+    animation-direction:normal;  */
+    
+     animation: loader 2s linear 3s infinite normal; 
 
 }
-@keyframes loader{                     /* @keyframes _____(any name){from{} to{} }   for animation  */
+ @keyframes loader{                     /* @keyframes _____(any name){from{} to{} }   for animation  */
     from{
         transform:rotate(0deg);
     }
     to{
         transform: rotate(360deg);
     }
-}
+} 
 nav{
     background-color:blue;
     height:100px;
