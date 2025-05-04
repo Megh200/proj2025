@@ -131,7 +131,7 @@ button:hover{
      /* animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-direction:normal;  */
-    
+
      animation: loader 2s linear 3s infinite normal; 
 
 }
@@ -203,3 +203,14 @@ table{
     }
 }
 /* translate() changes positions from its original */
+
+
+@keyframes ch{
+    from{
+        transform:rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
