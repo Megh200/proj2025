@@ -214,3 +214,13 @@ table{
         transform: rotate(360deg);
     }
 }
+
+#ui{
+    width:150px;
+    height:400px;
+    background-color: black;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    
+}
