@@ -193,6 +193,8 @@ table{
     height:50px;
     border-radius:50%;
     position:absolute;
+    top:10px;
+    left:33%;
     animation:sunrise 4s ease-in 0s 2 normal;
 }
 @keyframes sunrise {
@@ -224,3 +226,11 @@ table{
     align-content: space-between;
     
 }
+
+
+
+
+
+
+
+
