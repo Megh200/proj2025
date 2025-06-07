@@ -11,16 +11,19 @@
 <body>
     
     <!-- navbar -->
-     <!-- collapse means to hide/show -->
+     <!-- collapse means click to hide/show -->
 
     <nav class="navbar navbar-expand-lg bg-success">
-        <a class="navbar-brand" data-bs-target="#navigation-bar" data-bs-toggle="collapse" href="#"><i class="ps-3 bi bi-person-circle fs-1 text-dark"></i></a>
+        <a class="navbar-brand"  href="#" data-bs-target="#navigation-bar" data-bs-toggle="collapse" ><i class="ps-3 bi bi-person-circle fs-1 text-dark"></i></a>
         
         <!-- when we write collapse only, all the contents hide both on big size and small size but it'll hide like simple & we want it to hide acc.t navbar
          like all in center as all websites do and when we write navbar-collapse only it does this thing for small screensizes
          bcz it inherits this small size prop BUT when we set screen small,it will show navbar contents open like it will not
          hide that so we want navbar to be hidden exactly when we set small screensize that's why we use collapse -->
-        <div class="collapse navbar-collapse " id="navigation-bar">
+        <div class="collapse navbar-collapse" id="navigation-bar">
+        <!-- navbar-collapse works for both small screen size collapse & big screen collapse 
+         like ... navbar-collapse adjust sm & big screen navbar line a website navbar  -->
+
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link text-light text-decoration-none px-2 fw-bold btn btn-dark" href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link text-light text-decoration-none px-2 fw-bold btn btn-dark" href="#">Skills</a></li>
@@ -36,6 +39,7 @@
 
             <li class="nav-item"><a class="nav-link text-light text-decoration-none px-2 fw-bold btn btn-dark" href="#">Contact me</a></li>
         </ul>
+
         <form class="m-3">
             <div class="input-group input-group-sm">
         <input type="input-group-text" placeholder="search" class="form-control">
@@ -154,6 +158,7 @@
      </section>
     <!-- skills -->
 
+    
     <!-- education -->
       <section class="bg-warning-subtle">
         <div class="container-fluid pb-3">
