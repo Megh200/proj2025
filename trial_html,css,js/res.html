@@ -8,7 +8,7 @@
 
     <link href="/00000000/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
     
-    <!-- <link rel="stylesheet" href="/00000000/trial_html,css,js/style.css"> -->
+    <link rel="stylesheet" href="/00000000/trial_html,css,js/style.css">
 
 
 </head>
@@ -80,12 +80,15 @@
 
         <div class="my-box">my-box div</div><br><br>
 
-        <!-- "list-unstyled" class removes bullet points but when we apply "list-inline" it also does the same and inlines list items -->
-        <ul class="list-inline text-danger">
+        <!-- "list-unstyled" class removes bullet points 
+         but when we apply "list-inline" it also does the same and inlines list items -->
+        
+         <ul class="list-inline text-warning bg-danger">
             <li class="list-inline-item">input btn-outline</li>
             <li class="list-inline-item">input btn</li>
             <li class="list-inline-item">button btn</li>
             <li class="list-inline-item">div btn</li></ul>
+
         <form>
             <input type="submit" class="btn btn-outline-dark">
             <input type="submit" class="btn btn-dark">
@@ -97,12 +100,11 @@
             <li class="nav-item p-2">one</li>
             <!-- see the diff b/w btn on nav-item vs btn on nav-link;
              we have to write nav-item element bcz nav-link is part of it just like nav-item is of nav -->
-            <li class="nav-item p-2 btn btn-dark">two</li>
-            <li class="nav-item p-2"><a href="#" class="nav-link btn btn-dark">three</a></li> 
-            <li class="nav-item p-2"><div class="nav-link btn btn-dark">three</div></li>
-            <!-- see, 1 is <a> & 2 is <div> work same & both are linky-blue; 1 is ok but 2 is div but nav-link also a link item.
-                so on link items btn works differently like this -->
-        </ul>
+            <li class="nav-item p-2 btn btn-warning">two</li>
+            <li class="nav-item p-2"><a href="#" class="btn btn-warning">three</a></li> 
+            <li class="nav-item p-2"><div class="nav-link btn btn-warning">three</div></li>
+            <!-- see, 1 is <a> & 2 is <div> but only nav-link button worked.-->
+            </ul>
 
 <br><br><br>
 
