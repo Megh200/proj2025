@@ -4,7 +4,7 @@ const randomnum=Math.trunc(Math.random()*6+1);
 console.log(randomnum);
 
 // create a image var
-const image1 =  "/dom/dice/d" + randomnum + ".jpg";
+const image1 =  "./dice/d" + randomnum + ".jpg";
 //  this above expression is written with reference to images like d1.jpg or d2.jpg etc
 // so for 'd', there will be the path of image; for nums like 1/2or 3 etc we added randomnum
 // that's why we created randomnumber; and then last '.jpg'
