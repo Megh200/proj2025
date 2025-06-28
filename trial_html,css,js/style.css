@@ -93,7 +93,7 @@ button:hover{
 }
 .s{
     width:30px;
-    height: 20px;
+    height: 2em;
     background-color: red;
     position: absolute;
     top: 90px;
@@ -195,7 +195,7 @@ table{
     position:absolute;
     top:10px;
     left:33%;
-    /* animation:sunrise 4s ease-in 0s 2 normal; */
+    animation:sunrise 4s ease-in 0s 2 normal;
 }
 @keyframes sunrise {
     from{
@@ -225,6 +225,11 @@ table{
     flex-wrap: wrap;
     align-content: space-between;
     
+    /* justify-content: center;
+    flex-direction: column; */
+    /* when we do flex-direction: row, horizontal/row
+    becomes main axis & when we do 'column' it/vertical becomes
+    main axis & to center divs in a div they must be along main axis only  */
 }
 
 
