@@ -1,6 +1,6 @@
 #op{
     background-image: url('/00000000/image/html1.jpg');
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: contain;
     color: wheat;
 }
